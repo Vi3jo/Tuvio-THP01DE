@@ -1,0 +1,126 @@
+- fan:
+    friendly_name: Очиститель
+    entity_category: None
+    fan_speed_control: '4'
+    fan_direction_forward: forward
+    fan_direction_reverse: reverse
+    fan_speed_min: 1
+    fan_speed_max: 4
+    fan_speed_ordered_list: 1,2,3,4,AUTO,Sleep
+    id: '1'
+    platform: fan
+    icon: mdi:fan
+- sensor:
+    friendly_name: Качество воздуха
+    entity_category: None
+    device_class: pm25
+    state_class: measurement
+    id: '2'
+    platform: sensor
+    icon: mdi:molecule
+- switch:
+    friendly_name: Детский замок
+    entity_category: config
+    restore_on_reconnect: false
+    is_passive_entity: false
+    id: '7'
+    platform: switch
+    icon: mdi:account-lock
+- switch:
+    friendly_name: Сброс фильтра
+    entity_category: config
+    restore_on_reconnect: false
+    is_passive_entity: false
+    id: '11'
+    platform: switch
+    icon: mdi:filter
+- select:
+    friendly_name: Таймер
+    entity_category: config
+    select_options:
+      '0': '0'
+      '1': '1'
+      '2': '2'
+      '3': '3'
+      '4': '4'
+      '5': '5'
+      '6': '6'
+      '7': '7'
+      '8': '8'
+      '9': '9'
+      '10': '10'
+      '11': '11'
+      '12': '12'
+      '13': '13'
+      '14': '14'
+      '15': '15'
+      '16': '16'
+      '17': '17'
+      '18': '18'
+      '19': '19'
+      '20': '20'
+      '21': '21'
+      '22': '22'
+      '23': '23'
+      '24': '24'
+    restore_on_reconnect: false
+    is_passive_entity: false
+    id: '18'
+    platform: select
+    icon: mdi:timer-cog-outline
+- sensor:
+    friendly_name: Качество воздуха
+    entity_category: None
+    device_class: enum
+    id: '21'
+    platform: sensor
+    icon: mdi:air-filter
+- switch:
+    friendly_name: Ионизация
+    entity_category: None
+    restore_on_reconnect: false
+    is_passive_entity: false
+    device_class: switch
+    id: '101'
+    platform: switch
+    icon: ''
+- select:
+    friendly_name: Режим работы
+    entity_category: config
+    select_options:
+      manual: Ручной
+      auto: Авто
+      sleep: Сон
+    restore_on_reconnect: false
+    is_passive_entity: false
+    id: '3'
+    platform: select
+    icon: ''
+- sensor:
+    friendly_name: Фильтр
+    entity_category: diagnostic
+    unit_of_measurement: '%'
+    id: '5'
+    platform: sensor
+    icon: ''
+- sensor:
+    friendly_name: Таймер осталось
+    entity_category: diagnostic
+    id: '19'
+    platform: sensor
+    icon: ''
+- select:
+    friendly_name: Скорость вентилятора
+    entity_category: None
+    select_options:
+      '1': Низкая
+      '2': Средняя
+      '3': Выше среднего
+      '4': Высокая
+      AUTO: Авто
+      Sleep: Сон
+    restore_on_reconnect: false
+    is_passive_entity: false
+    id: '4'
+    platform: select
+    icon: ''
